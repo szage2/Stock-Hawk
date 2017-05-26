@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name" translatable="false" >Stock Hawk</string>
+
+    <string name="pref_stocks_initialized_key" translatable="false">initialized</string>
+
+    <string name="pref_stocks_key" translatable="false" >stocks</string>
+
+
+    <!-- Preferences -->
+    <string name="pref_display_mode_key" translatable="false" >displayMode</string>
+    <string name="pref_display_mode_default" translatable="false" >@string/pref_display_mode_percentage_key</string>
+
+    <string name="pref_display_mode_absolute_key" translatable="false" >absolute</string>
+    <string name="pref_display_mode_percentage_key" translatable="false" >percentage</string>
+
+    <string name="default_stocks_yahoo" translatable="false" >YHOO</string>
+    <string name="default_stocks_apple" translatable="false" >AAPL</string>
+    <string name="default_stocks_microsoft" translatable="false" >MSFT</string>
+    <string name="default_stocks_facebook" translatable="false" >FB</string>
+
+    <!-- Actions -->
+    <string name="action_change_units" translatable="false" >@string/pref_display_mode_key</string>
+    <string name="action_change_units_dollar_content_description" translatable="false" >Change display unit to dollar</string>
+    <string name="action_change_units_percent_content_description" translatable="false" >Change display unit to percentage</string>
+    <string name="action_fab_button_content_description" translatable="true" >With this button you can add new stocks</string>
+
+    <!-- Dialog -->
+    <string name="dialog_title" translatable="true" >Add Stock</string>
+    <string name="dialog_hint" translatable="true" >Symbol (e.g. GOOG)</string>
+    <string name="dialog_cancel" translatable="true" >Cancel</string>
+    <string name="dialog_add" translatable="true" >Add</string>
+    <string name="alphabet_digit_limitation" translatable="false" >abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <!-- Errors -->
+    <string name="error_no_network" translatable="true" >No network connectivity! Will load stock cursor when the network is available.</string>
+    <string name="error_no_stocks" translatable="true" >No stocks added! Hit the floating action button to add one.</string>
+
+    <!-- Toast messages -->
+    <string name="toast_invalid_stock" translatable="true" >Invalid symbol, please try again.</string>
+    <string name="toast_stock_added_no_connectivity" translatable="true" >Symbol %s added. Will refresh when network available.</string>
+    <string name="toast_no_connectivity" translatable="true" >Will refresh when network available.</string>
+
+    <!-- Title -->
+    <string name="title_activity_detail" translatable="true" >Stock over time</string>
+
+    <!-- Status key -->
+    <string name="pref_stock_status_key" translatable="false" >stock-status</string>
+
+    <!-- Widget Stock List -->
+    <string name="widget_stock_symbol_text" translatable="false" >Symbol</string>
+    <string name="widget_bid_price_text" translatable="false" >1000.00</string>
+    <string name="widget_percent_change_text" translatable="false" >100%</string>
+
+</resources>

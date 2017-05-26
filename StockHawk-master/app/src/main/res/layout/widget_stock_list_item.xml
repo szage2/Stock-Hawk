@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_list_item"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/widget_stock_list_item_symbol"
+            style="@style/StockSymbolTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/widget_text_color"
+            android:textSize="18dp"
+            tools:text="@string/widget_stock_symbol_text"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BidPriceTextStyle"
+                android:id="@+id/widget_stock_list_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textSize="18dp"
+                android:textColor="@color/widget_text_color"
+                tools:text="@string/widget_bid_price_text"/>
+
+            <TextView
+                style="@style/PercentChangeTextStyle"
+                android:id="@+id/widget_stock_list_item_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/percent_change_pill_green"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:textSize="18dp"
+                tools:text="@string/widget_percent_change_text"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</FrameLayout>
